@@ -6,11 +6,6 @@ const bot = new Eris(process.env.token);
 
 bot.on("ready", () => {
   console.log("Bot is online!");
-
-  bot.editStatus("online", {
-    name: "Always here!",
-    type: 0 // "Playing"
-  });
 });
 
 bot.on("error", (err) => {
